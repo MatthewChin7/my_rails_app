@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>About - My Rails App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+    .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; text-align: center; }
+    .nav { text-align: center; margin: 20px 0; }
+    .nav a { color: #007bff; text-decoration: none; margin: 0 10px; padding: 8px 16px; border-radius: 5px; }
+    .nav a:hover { background: #e9ecef; }
+    .feature-list { list-style-type: none; padding: 0; }
+    .feature-list li { padding: 10px; margin: 5px 0; background: #e9ecef; border-radius: 5px; }
+    .tech-stack { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 20px 0; }
+    .tech-item { background: #007bff; color: white; padding: 10px 20px; border-radius: 5px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About My Rails App</h1>
+    
+    <div class="nav">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </div>
+    
+    <h2>Welcome to Our Rails Application!</h2>
+    <p>This is a simple Ruby on Rails application built to demonstrate basic web development concepts and interactive features.</p>
+    
+    <h3>Features</h3>
+    <ul class="feature-list">
+      <li>Interactive buttons with JavaScript functionality</li>
+      <li>Counter system with increment and reset</li>
+      <li>Dynamic background color changes</li>
+      <li>Real-time clock display</li>
+      <li>Responsive design</li>
+      <li>Clean and modern UI</li>
+    </ul>
+    
+    <h3>Technology Stack</h3>
+    <div class="tech-stack">
+      <div class="tech-item">Ruby on Rails</div>
+      <div class="tech-item">HTML5</div>
+      <div class="tech-item">CSS3</div>
+      <div class="tech-item">JavaScript</div>
+      <div class="tech-item">Git</div>
+    </div>
+    
+    <h3>Getting Started</h3>
+    <p>To run this application locally:</p>
+    <ol>
+      <li>Clone the repository</li>
+      <li>Run <code>bundle install</code></li>
+      <li>Run <code>rails server</code></li>
+      <li>Visit <code>http://localhost:3000</code></li>
+    </ol>
+  </div>
+</body>
+</html>
